@@ -1,0 +1,57 @@
+
+.progress-circle {
+    position: relative;
+    width: 20vw; 
+    height: 20vw;
+    max-width: 150px; 
+    max-height: 150px;
+    background: conic-gradient(
+      #4caf50 0% 25%, 
+      #d3d3d3 25% 100% 
+    );
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .progress-circle-inner {
+    width: 80%; 
+    height: 80%; 
+    background-color: #fff; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   Centered percentage label
+  .progress-circle-inner span {
+    font-size: 1rem; 
+    font-weight: bold;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .progress-circle {
+      width: 25vw; 
+      height: 25vw;
+    }
+  
+    .progress-circle-inner span {
+      font-size: 0.8rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .progress-circle {
+      width: 30vw;
+      height: 30vw;
+    }
+  
+    .progress-circle-inner span {
+      font-size: 0.7rem;
+    }
+  }
